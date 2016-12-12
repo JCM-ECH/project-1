@@ -1,0 +1,476 @@
+/*RED HEX AND RGB
+#F42434
+rgb(244,36,52)
+*/
+/*TO ADD STYLE TO THE LINKS ON THE MAIN PAGE, UPCOMING EVENTS FOR EXAMPLE, USE THE 
+.main-links CLASS. FOR MY SANITY PLEASE, THANKS*/
+
+
+
+/*.demo-2{*/
+/*  color: #314559;*/
+/*  padding: 10px 0;*/
+/*}*/
+ 
+/*.demo-2::before {*/
+/*  color: #fff;*/
+/*  max-width: 0;*/
+/*  padding: 10px 0;*/
+/*  border-top: 1px dashed #fff;*/
+/*  border-bottom: 1px dashed #fff;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  overflow: hidden;*/
+/*  content: attr(data-text);*/
+/*  -webkit-transition: all 0.3s;*/
+/*  -moz-transition: all 0.3s;*/
+/*  -ms-transition: all 0.3s;*/
+/*  -o-transition: all 0.3s;*/
+/*  transition: all 0.3s;*/
+/*}*/
+ 
+/*.demo-2:hover::before,*/
+/*.demo-2:focus::before {*/
+/*  max-width: 100%;*/
+/*  outline: none;*/
+/*  text-shadow: none;*/
+/*}*/
+
+
+
+
+
+
+/*nav {*/
+/*  background: #fff;*/
+/*}*/
+/*nav ul {*/
+/*  list-style: none;*/
+/*  text-align: right;*/
+/*  margin: 5px;*/
+/*}*/
+/*nav ul li {*/
+/*  display: inline-block;*/
+/*}*/
+/*nav ul li a {*/
+/*  display: block;*/
+/*  padding: 5px;*/
+/*  text-decoration: none;*/
+/*  color: #aaa;*/
+/*  margin: 0;*/
+/*}*/
+/*nav ul li a,*/
+/*nav ul li a:after,*/
+/*nav ul li a:before {*/
+/*  transition: all .5s;*/
+/*}*/
+/*nav ul li a:hover {*/
+/*  color: #555;*/
+/*}*/
+
+/*nav.shift ul li a {*/
+/*  position:relative;*/
+/*  z-index: 1;*/
+/*}*/
+/*nav.shift ul li a:hover {*/
+/*  color: #e50c1c;*/
+/*  border: solid 2px #e50c1c;*/
+/*  border-radius:20%;*/
+/*}*/
+/*nav.shift ul li a:after {*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  margin: auto;*/
+/*  width: 100%;*/
+/*  height: 1px;*/
+/*  content: '.';*/
+/*  color: transparent;*/
+  /*background: #e50c1c;*/
+/*  opacity: 0;*/
+/*  z-index: -1;*/
+/*}*/
+/*nav.shift ul li a:hover:after {*/
+/*  opacity: 1;*/
+/*  visibility: visible;*/
+/*  height: 100%;*/
+/*}*/
+
+/***********************************
+GENERAL
+***********************************/
+
+body {
+  background-color: #F0F0F0;
+  position:relative;
+  padding-top:100px;
+  background-image: url("../img/index.png");
+  background-repeat: repeat;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+}
+
+h4 {
+  font-size: 12px;
+  color: 	#484848;
+  width: 70%;
+}
+
+a {
+  text-decoration: none;
+  color: #e50c1c;
+}
+
+.main-links {
+  font-size: 20px;
+  /*background-color: #e50c1c;*/
+  padding-top:5px;
+}
+
+.main-links a:hover {
+  border-bottom: 1px solid #e50c1c;
+}
+
+.ReadMore a{
+  text-decoration:none;
+  color:#484848;
+}
+
+.ReadMore a:hover{
+  text-decoration:underline;
+}
+
+/***********************************
+NAVIGATION
+***********************************/
+header {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  height: 105px;
+  position: fixed; 
+  top: 0;
+  clear:both;
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/*logo*/
+
+#logo {
+  width: 410px;
+  float: left;
+  position: absolute;
+}
+
+/*navigation bar*/
+nav {
+  float: right;
+  padding-right: 10px;
+
+}
+
+nav ul {
+  float: right;
+  clear: right;
+  padding: 25px 0;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+}
+
+nav a {
+ font-size: 1.2em;
+ margin: 5px;
+ text-decoration: none;
+ font-family: "Raleway";
+ color: #555;
+}
+
+nav a:hover{
+  color:#e50c1c;
+  text-decoration:underline;
+}
+
+/***********************************
+FOOTER
+***********************************/
+
+footer {
+  display: block;
+  text-align: center;
+  clear: both;
+  position: relative;
+  width: 100%;
+  /*color: #53585a;*/
+  color: white;
+  background-color: rgb(83, 88, 90);
+  height: 200px;
+  font-family: "Open Sans";
+  padding-top:5px;
+}
+
+.fa, .fa:before, .fa:hover {
+  color: white;
+  font-size: 30px;
+  width: 30px;
+}
+
+.fa-facebook {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-instagram {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background-color: #e1306c;
+}
+
+.fa-twitter {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-youtube {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+
+.fa-snapchat-ghost {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-snapchat-ghost:hover {
+    background-color: #fffc00;
+}
+
+.fa-github {
+    padding:10px 14px;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-github:hover {
+    background-color: #767676;
+}
+
+
+/***********************************
+PAGE: HOME
+***********************************/
+
+/*event box*/
+
+.contentbox {
+  width: 80%;
+  margin: 50px auto;
+  border: 0;
+  padding:0;
+  min-height: 267px;
+  box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) ;
+}
+
+.contentbox_img {
+  clear: left;
+  float: left;
+  width: 400px;
+  height: 240px;
+  margin-right: 15px;
+}
+
+.max_width {
+  width: 100%;
+}
+
+.contentbox_text {
+  width: 100%;
+  font-size: .70em;
+  clear: right;
+  display: block;
+  font-family: "Open Sans";
+  /*color: #53585a;*/
+  color: #707070;
+}
+
+section {
+  clear: both;
+  background-color: white;
+}
+
+/***********************************
+Dropdown, Event Page, DO NOT TOUCH
+**********************************/
+.Drop-Button{
+  background-color:white;
+  color:#707070;
+  font-family: "Open Sans";
+  padding:8px;
+  margin-top:6px;
+  border:solid 2px grey;
+  cursor:pointer;
+  position:fixed;
+}
+
+.Drop-Button:hover{
+  text-decoration:underline;
+  color:#F42434;
+}
+
+.Dropdown{
+  position:fixed;
+  display:inline-block;
+}
+
+.Drop-Content{
+  display:none;
+  position:absolute;
+  background-color:white;
+  border: grey solid 2px;
+  margin-top:6px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+}
+
+.Drop-Content a{
+  font-family: "Raleway";
+  padding: 6px;
+  text-decoration:none;
+  display:block;
+  color:grey;
+}
+
+.Drop-Content a:hover{
+  color:#F42434;
+  text-decoration:underline;
+}
+
+.show {
+  display:block;
+  
+}
+
+/***********************************
+Events
+***********************************/
+#tree{
+  margin-left:90px;
+}
+
+.date {
+  color:#e50c1c;
+  font-size:2.5em;
+}
+
+.Event {
+  font-size:1.5em;
+}
+
+@media only screen and (max-width:700px){
+  .calendar{
+    width:70%;
+    height:70%;
+  }
+}
+/**********************************
+Gallery
+***********************************/
+.img_container {
+  display:inline;
+}
+
+.img_container img{
+  height:45%;
+  width:45%;
+}
+
+
+/***********************************
+Join
+***********************************/
+
+#Join_Head{
+  text-align:center;
+  text-decoration:underline;
+}
+
+#Join_Para{
+  margin:4px 6px 4px 6px;
+}
+
+/***********************************
+Members
+***********************************/
+
+#Saxo {
+  margin-top:10px;
+  margin-left:75px;
+}
+
+#trumpet {
+  margin-top:60px;
+}
+
+#drum{
+  margin-left:55px;
+} 
+
+#violin{
+  margin-top:10px;
+  margin-left:55px;
+}
+
+.Sections {
+  display:inline-block;
+  vertical-align: top;
+  margin-left:10px;
+}
+
+.Sec_Head{
+  text-align:left;
+  font-size:2em;
+  color:#e50c1c;
+}
+
+.Sections h3 {
+  font-size:1.5em;
+  text-decoration:underline;
+  margin-bottom:1px;
+  color:#484848;
+}
+
+/***********************************
+About
+***********************************/
+#About-Box{
+ padding:5px; 
+ text-align:center;
+}
+
+#About_Head{
+  text-align:center;
+  font-size:2em;
+  color:#e50c1c;
+  text-decoration:underline;
+}
